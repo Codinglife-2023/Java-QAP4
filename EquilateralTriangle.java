@@ -1,11 +1,24 @@
-package QAP4.Problem1;
+package QAP4.Problem2;
 
-public class EquilateralTriangle extends Triangle {
+public class EquilateralTriangle implements Scalable {
 
-    public EquilateralTriangle(String name, int sideLength) {
+    // constructor
 
-        super(name, sideLength, sideLength, sideLength);
+    public EquilateralTriangle(int sideLength) {
+
+        // constructor implementation
+
+    }
+
+
+
+    // implement the Scalable interface
+
+    public void scale(double factor) {
+
+        // scale the triangle
 
     }
 
 }
+

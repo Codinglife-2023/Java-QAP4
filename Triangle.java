@@ -1,7 +1,9 @@
-package QAP4.Problem1;
+package QAP4.Problem2;
 
-// Triangle class inheriting from Shape, representing a general triangle
-public class Triangle extends Shape {
+import QAP4.Problem1.Shape;
+
+// Triangle class implementing Scalable interface, representing a general triangle
+public class Triangle extends Shape implements Scalable {
     private double side1, side2, side3; // Sides of the triangle
 
     // Constructor to set the name and sides of the triangle, checks for validity
@@ -27,5 +29,13 @@ public class Triangle extends Shape {
     @Override
     public double getPerimeter() {
         return side1 + side2 + side3;
+    }
+
+    // Scale the triangle's sides
+    @Override
+    public void scale(double factor) {
+        side1 *= factor;
+        side2 *= factor;
+        side3 *= factor;
     }
 }
